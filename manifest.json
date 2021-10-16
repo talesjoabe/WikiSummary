@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "WikiSummary",
+  "version": "1.0",
+  "description": "This extensions takes a keyword and show us a summary from Wikipedia",
+  "icons": {
+    "128": "WikiSummary-Icon.png"
+  },
+  "browser_action": {
+    "default_icon": "WikiSummary-Icon.png",
+    "default_popup": "popup.html"
+  },
+  "background":{
+    "scripts": ["js/background.js"],
+    "persistent": false
+  },
+  "permissions":
+  [
+    "notifications",
+    "http://127.0.0.1:8000/"
+  ]
+}
